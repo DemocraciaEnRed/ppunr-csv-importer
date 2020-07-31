@@ -8,7 +8,7 @@ Generar el dump con
 `python3 importador-escuelas.py ARCHIVO.csv`
 
 Importar a mongo local con    
-`mongo localhost:27017/ppunre-prod dump-NUMERO.json`   
+`mongo localhost:27017/ppunre-prod dump-NUMERO.js`   
 _(imprime `FIN!` si anda bien)_
 
 ### Para restorear una base de datos de producción a entorno local

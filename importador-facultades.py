@@ -7,7 +7,7 @@ Editar en config/development.json "mongoUrl": "mongodb://localhost:27017/ppunr-p
 
 == Para usar este script
 $ python3 importador-escuelas.py ARCHIVO.csv
-$ mongo localhost:27017/ppunr-prod dump-NUMERO.json
+$ mongo localhost:27017/ppunr-prod dump-NUMERO.js
 Imprime FIN! si anda bien
 '''
 
@@ -94,8 +94,8 @@ data_parseada = parsear(FNAME)
 from datetime import datetime
 def tstamp(): return str(int( datetime.now().timestamp() ))
 
-print('Dumping json')
-with open(f'dump-{tstamp()}.json', 'w+') as dump_file:
+print('Dumping js')
+with open(f'dump-{tstamp()}.js', 'w+') as dump_file:
   
   # https://docs.mongodb.com/manual/reference/method/Bulk.find.update/#example
   dump_file.write('var bulk = db.topics.initializeUnorderedBulkOp();\n')
